@@ -1,3 +1,174 @@
 @charset "utf-8";
 /* CSS Document */
+.menu a {
+	color:black;
+	text-decoration:none;
+}
 
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+h1 {
+	margin: 10px;
+}
+
+.apps ul {
+	float: right;
+	margin-right: 10%;
+}
+
+.apps li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	float: both;
+}
+
+li img {
+	margin: 10px;
+	height: 150px;
+	width: 150px;
+}
+
+.front, .aboutme {
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+}
+
+.front p, .aboutme p {
+	margin-left: 5%;
+}
+
+.bigportrait {
+	clip-path: circle(42.6%);
+	position: relative;
+	float: right;
+	max-width: 50%;
+	height: auto;
+	width: auto;
+	margin-left: 15%;
+}
+
+.portrait {
+	clip-path: circle(42.6%);
+	width: 120px;
+}
+
+.top-bar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background: #B9B9B9;
+	height: 110px;
+	padding: 5px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+}
+
+.top-bar li {
+	padding: 15px;
+	overflow: hidden;
+}
+
+.menu-box {
+	height: 100%;
+	width: 30%;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon, .icon::before, .icon::after {
+	display: block;
+	background: white;
+	position: absolute;
+	height: 4px;
+	width: 30px;
+	border-radius: 2px;
+	transition: transform 400ms; /*change time later*/
+}
+
+.icon::before {
+	content: "";
+	margin-top: -8px;
+}
+
+.icon::after {
+	content: "";
+	margin-top: 8px;
+}
+
+#activate:checked + .menu-box .icon::before {
+	margin-top: 0;
+	transform: rotate(45deg);
+}
+
+#activate:checked + .menu-box .icon::after {
+	margin-top: 0;
+	transform: rotate(-45deg);
+}
+
+#activate:checked + .menu-box .icon {
+	background: rgba(205,86,88,0)
+}
+
+#activate {
+	display: none;
+}
+
+.menu-box {
+	display: none;
+}
+
+@media screen and (max-width: 700px) {
+	.menu-box {
+		display: flex;
+	}
+	
+	.menu {
+		position: absolute;
+		top: 0;
+		margin-top: 110px;
+		left: 0;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#activate ~ .menu li {
+		height: 0px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		transition: height 400ms;
+	}
+	
+	#activate:checked ~ .menu li {
+		border: 1px solid white;
+		height: 40px;
+		padding: 5px;
+		transition: height 400ms;
+	}
+	
+	.menu li {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		padding: 5px;
+		width: 100%;
+		background: #B9B9B9;
+	}
+}
