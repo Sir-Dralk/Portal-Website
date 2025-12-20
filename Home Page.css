@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+#GLaDOS_Hello {
+	position: relative;
+	float: right;
+	max-width: 35%;
+	height: auto;
+	width: auto;
+	margin-right: 5%;
+}
+video {
+	position: relative;
+	float: left;
+	max-width:45%;
+	height: 350px;
+	width: auto;
+	align-items: center;
+	margin: 5%;
+}
+
+
+.intro {
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+}
+
+.intro p {
+	margin-left: 5%;
+}
