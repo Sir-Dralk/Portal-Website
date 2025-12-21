@@ -11,10 +11,8 @@
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
 body{
-	
-	background-size: 100%;
-	background-image: linear-gradient(90deg, lightgray, white, lightgray);
-	
+	background-size: 70%;
+	background-image: url("Images/Portal_Light_background.png")
 }
 
 
