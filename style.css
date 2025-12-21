@@ -1,8 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 .menu a {
-	color:gray;
+	color:lightgray;
 	text-decoration:none;
+}
+.menu a:hover {
+	text-decoration: underline;
+	text-decoration-color: aqua;
+}
+
+.TechList {
+	
 }
 
 * {
