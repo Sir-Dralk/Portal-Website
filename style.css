@@ -3,14 +3,11 @@
 .menu a {
 	color:lightgray;
 	text-decoration:none;
+	padding: 5px;
 }
 .menu a:hover {
 	text-decoration: underline;
-	text-decoration-color: aqua;
-}
-
-.Tech p {
-	
+	border:thick ridge aqua;
 }
 
 #IntroVideo {
@@ -30,8 +27,8 @@
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
 body{
-	background-size: 7S<0%;
-	background-image: url("Images/Portal_Light_background.png")
+	background-size: 75%;
+	background-image: url("Images/Portal_Light_background.png");
 }
 
 
@@ -180,4 +177,53 @@ li img {
 		width: 100%;
 		background: #B9B9B9;
 	}
+}
+.OpenPage {
+	border:thick ridge aqua;
+}
+
+.SafetyPosters img {
+	height: auto;
+	width: 40%;
+	column-count: 2;
+	margin: 2.5%;
+}
+
+
+.BodyText {
+	margin: 10px;
+	border: 2px inset darkgray;
+	padding: 2px;
+	display: inline-flex;
+	width:auto;
+}
+
+.Tech {
+	
+	height: 200px;
+}
+
+.Tech .BodyText {
+	margin: 1%;
+	width: 50%;
+	
+}
+
+.Tech div {
+	display: flex;
+	flex-direction: row;
+}
+.TechTitle {
+	margin-left: 1%;
+}
+.TechImage {
+	border: 1px groove black;
+	background: white;
+}
+#CaveCaroline {
+	float: right;
+}
+
+.Cake {
+	width: 30%;
 }
