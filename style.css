@@ -13,6 +13,17 @@
 	
 }
 
+#IntroVideo {
+	position: relative;
+	float: right;
+	max-width:45%;
+	height: 350px;
+	width: auto;
+	align-items: center;
+	margin: 5%;
+}
+
+
 * {
 	margin: 0px;
 	padding: 0px;
