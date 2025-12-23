@@ -10,27 +10,11 @@
 	border:thick ridge aqua;
 }
 
-#IntroVideo {
-	position: relative;
-	float: right;
-	max-width:45%;
-	height: 350px;
-	width: auto;
-	align-items: center;
-	margin: 5%;
-}
-
-
 * {
 	margin: 0px;
 	padding: 0px;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 }
-body{
-	background-size: 75%;
-	background-image: url("Images/Portal_Light_background.png");
-}
-
 
 h1 {
 	margin: 10px;
@@ -178,9 +162,57 @@ li img {
 		background: #B9B9B9;
 	}
 }
+
 .OpenPage {
 	border:thick ridge aqua;
 }
+
+body{
+	background-size: 75%;
+	background-image: url("Images/Portal_Light_background.png");
+}
+
+#GLaDOS_Hello {
+	position: relative;
+	float: right;
+	max-width: 35%;
+	height: auto;
+	width: auto;
+	margin-right: 5%;
+}
+
+
+.intro {
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+}
+
+.intro p {
+	margin-left: 5%;
+}
+
+#FriendPoster {
+	position: relative;
+	float: left;
+	max-width:45%;
+	height: 350px;
+	width: auto;
+	align-items: center;
+	margin: 5%;
+}
+
+#IntroVideo {
+	position: relative;
+	float: right;
+	max-width:45%;
+	height: 350px;
+	width: auto;
+	align-items: center;
+	margin: 5%;
+}
+
 
 .SafetyPosters img {
 	height: auto;
@@ -206,7 +238,6 @@ li img {
 .Tech .BodyText {
 	margin: 1%;
 	width: 50%;
-	
 }
 
 .Tech div {
